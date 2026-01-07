@@ -1,0 +1,9 @@
+<?php
+$usuario = [
+    'nome'        => 'Bianca',
+    'email'       => 'bianca@gmail.com',
+    'telefone'    => '(55) 1234-5678'
+];
+
+    echo 'Nome do usuário: ' . $usuario['nome'];
+?>

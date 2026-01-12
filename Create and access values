@@ -1,0 +1,28 @@
+<?php
+//----Exercício 1----
+--> Criar um array associativo
+--> Imprimir só o nome
+--> Imprimir uma frase: "Ana tem 19 anos e faz ADS"
+
+$aluno = [
+        'nome'     =>   'Ana',
+        'idade'    =>    19,
+        'curso'    =>   'ADS',
+    ];
+
+   echo $aluno['nome'] . '<br>';
+   echo $aluno['nome'] . ' tem ' . $aluno['idade'] . ' anos e faz ' . $aluno['curso'];
+
+//----Exercício 2----
+--> Criar um array associativo
+--> Imprimir todo o array
+
+$produtos = [
+        'nome'  =>  'Mouse',
+        'preco' =>   99.90,
+];
+
+foreach ($produtos as $chave => $valor) {
+	echo $chave . ': ' . $valor . '<br>';
+}
+?>

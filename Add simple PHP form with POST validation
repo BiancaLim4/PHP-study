@@ -1,0 +1,55 @@
+/*
+Exercício de estudo em PHP.
+
+Objetivo:
+- Criar um formulário simples em HTML
+- Enviar dados via POST
+- Validar campos obrigatórios
+- Validar formato de email
+- Executar validações apenas após o envio do formulário
+
+Arquivo usado para fins de aprendizado.
+*/
+
+<body>
+    <form method="post" action="index.php">
+        <label>
+            Nome do usuário:
+            <input type="text" name="nome" placeholder="Informe o seu nome" required>
+        </label>
+
+        <br><br>
+
+        <label>
+            Email:
+            <input type="email" name="email" placeholder="example@gmail.com" required>
+        </label>
+
+        <br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+    // Recebe os dados do formulário
+    $usuario = $_POST['nome']  ?? '';
+    $email   = $_POST['email'] ?? '';
+
+    // Valida campos obrigatórios
+    if ($usuario === '' || $email === '') {
+        echo "Todos os campos são obrigatórios";
+        exit;
+    }
+
+    // Valida formato do email
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Email inválido!";
+        exit;
+    }
+
+    echo "Formulário enviado com sucesso!";
+}
+?>
+</body>

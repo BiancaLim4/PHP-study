@@ -1,0 +1,15 @@
+# PHP OOP – Caneta Exercise
+
+This repository contains a simple Object-Oriented Programming exercise in PHP.
+
+## Concepts covered
+- Classes and objects
+- Encapsulation
+- Private attributes
+- Getters and setters
+- Basic validation
+- Object state control
+
+## Description
+The `Caneta` class models a pen with attributes such as model, color, tip size, and capped state.  
+All attributes are private and accessed only through methods, ensuring data integrity.

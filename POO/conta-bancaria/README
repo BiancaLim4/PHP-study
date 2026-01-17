@@ -1,0 +1,19 @@
+# Conta Bancária em PHP (POO)
+
+Este exercício foi desenvolvido com o objetivo de praticar os conceitos fundamentais de
+Programação Orientada a Objetos utilizando PHP.
+
+## Conceitos aplicados
+- Classes e objetos
+- Encapsulamento
+- Visibilidade de atributos
+- Construtor
+- Getters e setters
+- Regras de negócio dentro da classe
+
+## Estrutura
+- `ContaBanco.php`: classe principal com regras da conta
+- `teste.php`: arquivo de teste para simular o uso da classe
+
+## Observações
+Este projeto é apenas educacional e faz parte do meu estudo contínuo de PHP e POO.
